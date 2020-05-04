@@ -1,0 +1,49 @@
+* {
+  font-family: "Baloo Bhaina 2", cursive;
+}
+a {
+  text-decoration: none;
+}
+.h-100 {
+  height: 100vh !important;
+}
+
+.bg-home-1 {
+  background: url("/assets/bg-3.png") no-repeat center center/cover;
+  width: 100vw;
+}
+.bg-home-2 {
+  background: url("/assets/bg-2.png") no-repeat center center/cover;
+  width: 100vw;
+}
+.bg-home-3 {
+  background: url("/assets/bg-4.svg") no-repeat center center/cover;
+  width: 100vw;
+}
+.bg-home-4 {
+  background: url("/assets/bg-5.png") no-repeat center center/cover;
+  width: 100vw;
+}
+
+.fixed-nav {
+  background-color: #efe2ff3d;
+}
+.name-box {
+  height: 110px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.text-title-name {
+  background-color: #7b25eb;
+}
+/* .text-title {
+  color: #7b25eb;
+} */
+
+.hr {
+  background-color: rgba(126, 126, 126, 0.534);
+  height: 1px;
+  width: 80%;
+  margin: 0 auto;
+}
