@@ -6,7 +6,7 @@ function NavPublic() {
   return (
     <StickyHeader
       header={
-        <nav class="navbar navbar-expand-lg navbar-light pt-4 w-100 fixed-nav shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light  py-3 w-100 fixed-nav shadow-sm">
           <a class="navbar-brand" href="#"></a>
           <button
             class="navbar-toggler"

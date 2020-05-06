@@ -12,7 +12,7 @@ export class Home extends Component {
               <div className="container ">
                 <div className="row justify-content-center align-items-center">
                   <div className="col-md-6">
-                    <div className="row justify-content-center align-items-center ">
+                    <div className="row justify-content-center align-items-center text-center">
                       <div className="display-1 font-weight-bold d-flex justify-content-center align-items-center">
                         <div className="name-box text-white text-title-name ">
                           RAJAT

@@ -1,6 +1,7 @@
 * {
-  font-family: "Baloo Bhaina 2", cursive;
+  font-family: "Noto Sans JP", sans-serif;
 }
+
 a {
   text-decoration: none;
 }
@@ -29,17 +30,12 @@ a {
   background-color: #efe2ff3d;
 }
 .name-box {
-  height: 110px;
-  text-align: center;
   padding: 0.5rem 1rem;
 }
 
 .text-title-name {
   background-color: #7b25eb;
 }
-/* .text-title {
-  color: #7b25eb;
-} */
 
 .hr {
   background-color: rgba(126, 126, 126, 0.534);
