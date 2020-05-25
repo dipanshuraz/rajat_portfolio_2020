@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import CardSM from "../components/CardSm";
-import ScrollableAnchor from "react-scrollable-anchor";
+import React, { Component } from 'react';
+import CardSM from '../components/CardSm';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 export class Home extends Component {
   render() {
     return (
       <>
-        <ScrollableAnchor id={"section1"}>
+        <ScrollableAnchor id={'section1'}>
           <div className="container-fluid bg-home-1">
             <div className="row justify-content-center align-items-center h-100">
               <div className="container ">
@@ -14,27 +14,32 @@ export class Home extends Component {
                   <div className="col-md-6">
                     <div className="row justify-content-center align-items-center text-center">
                       <div className="display-1 font-weight-bold d-flex justify-content-center align-items-center">
-                        <div className="name-box text-white text-title-name ">
+                        <div
+                          className="name-box text-white text-title-name "
+                          unselectable="on"
+                        >
                           RAJAT
                         </div>
-                        <div className="name-box text-title">KUMAR</div>
+                        <div className="name-box text-title" unselectable="on">
+                          KUMAR
+                        </div>
                       </div>
                     </div>
                     <div className="row my-3">
                       <div className="text-dark">
                         <h2>
                           <a
-                            style={{ textDecoration: "none" }}
+                            style={{ textDecoration: 'none' }}
                             href="mailto:dipanshuraz2@gmail.com?body=Your message within Main Body"
                             className="text-dark"
                           >
-                            <i class="far fa-envelope"></i>{" "}
+                            <i class="far fa-envelope"></i>{' '}
                             dipanshuraz2@gmail.com
                           </a>
                         </h2>
                         <h3>
                           <a
-                            style={{ textDecoration: "none" }}
+                            style={{ textDecoration: 'none' }}
                             href="tel:+918299379285"
                             className="text-dark"
                           >
@@ -45,13 +50,21 @@ export class Home extends Component {
                     </div>
 
                     <div className="row justify-content-around ">
-                      <i class="fa-2x fab fa-facebook-f "></i>
+                      <a href="https://www.facebook.com/GraFornax/">
+                        <i class="fa-2x fab fa-facebook-f "></i>
+                      </a>
 
-                      <i class=" fa-2x fab fa-linkedin-in"></i>
+                      <a href="https://www.linkedin.com/in/rajat-kumar-a9858918a/">
+                        <i class=" fa-2x fab fa-linkedin-in"></i>
+                      </a>
 
-                      <i class="fa-2x fab fa-behance"></i>
+                      <a href="https://www.behance.net/grafornax">
+                        <i class="fa-2x fab fa-behance"></i>
+                      </a>
 
-                      <i class="fa-2x fab fa-instagram"></i>
+                      <a href="https://twitter.com/GraFornax">
+                        <i class="fa-2x fab fa-twitter-square"></i>
+                      </a>
                     </div>
                   </div>
                   <div className="col-md-6"></div>
@@ -60,7 +73,7 @@ export class Home extends Component {
             </div>
           </div>
         </ScrollableAnchor>
-        <ScrollableAnchor id={"section2"}>
+        <ScrollableAnchor id={'section2'}>
           <div className="container-fluid bg-home-2 h-100 d-flex justify-content-center align-items-center">
             <div className="row">
               <div className="container">
@@ -69,16 +82,65 @@ export class Home extends Component {
                     <h2>
                       <i class="fas fa-tools"></i> Tools
                     </h2>
+                    <div className="d-flex">
+                      <img
+                        src="/assets/4.png"
+                        width="100px"
+                        className="img-fluid p-2"
+                        alt=""
+                      />
+                      <img
+                        src="/assets/1.png"
+                        width="100px"
+                        className="img-fluid p-2"
+                        alt=""
+                      />
+                      <img
+                        src="/assets/5.png"
+                        width="100px"
+                        className="img-fluid p-2"
+                        alt=""
+                      />
+                      <img
+                        src="/assets/2.png"
+                        width="100px"
+                        className="img-fluid p-2"
+                        alt=""
+                      />
+                      <img
+                        src="/assets/3.png"
+                        width="100px"
+                        className="img-fluid p-2"
+                        alt=""
+                      />
+
+                      <img
+                        src="/assets/6.png"
+                        width="100px"
+                        className="img-fluid p-2"
+                        alt=""
+                      />
+                    </div>
                     <h2>
-                      {" "}
                       <img
                         src="/assets/services.svg"
                         width="40px"
                         className="img-fluid"
                         alt=""
-                      />{" "}
+                      />
                       Services
                     </h2>
+                    <div className="">
+                      <ul>
+                        <li>HEllo</li>
+                        <li>HEllo</li>
+                        <li>HEllo</li>
+                        <li>HEllo</li>
+                        <li>HEllo</li>
+                        <li>HEllo</li>
+                        <li>HEllo</li>
+                      </ul>
+                    </div>
                   </div>
                   <div className="col-md-4 text-center">
                     <img
@@ -100,10 +162,10 @@ export class Home extends Component {
             </div>
           </div>
         </ScrollableAnchor>
-        <ScrollableAnchor id={"section3"}>
+        <ScrollableAnchor id={'section3'}>
           <div className="container-fluid bg-home-3 h-100"></div>
         </ScrollableAnchor>
-        <ScrollableAnchor id={"section4"}>
+        <ScrollableAnchor id={'section4'}>
           <div className="container-fluid bg-home-4 h-100 d-flex justify-content-center flex-column text-center">
             <h1>My Clients </h1>
             <div className="container">
@@ -115,7 +177,7 @@ export class Home extends Component {
                   <CardSM />
                 </div>
                 <div className="col-md-3">
-                  <CardSM />{" "}
+                  <CardSM />{' '}
                 </div>
               </div>
             </div>
@@ -141,12 +203,13 @@ export class Home extends Component {
                 </form>
               </div>
             </div>
-            <div className="hr"></div>
             <div className="container justify-content-center align-items-center  my-5 text-center">
               <div className="row">
                 <div className="col-md-6">
                   <div className="row justify-content-around align-items-center">
-                    <i class="fa-2x fab fa-facebook-f"></i>
+                    <i class="fa-2x fab fa-facebook-f">
+                      <a href="https://www.facebook.com/GraFornax/"></a>
+                    </i>
                     <i class=" fa-2x fab fa-linkedin-in"></i>
                     <i class="fa-2x fab fa-behance"></i>
                   </div>
@@ -156,10 +219,9 @@ export class Home extends Component {
                     <h4>
                       Made With <i class=" fas fa-heart text-danger"> </i>
                       <a
-                        style={{ textDecoration: "none" }}
+                        style={{ textDecoration: 'none' }}
                         href="https://www.codersadhu.tech"
                       >
-                        {" "}
                         CoderSadhu
                       </a>
                     </h4>
@@ -167,8 +229,6 @@ export class Home extends Component {
                 </div>
               </div>
             </div>
-
-            <div className="hr"></div>
           </div>
         </ScrollableAnchor>
       </>
