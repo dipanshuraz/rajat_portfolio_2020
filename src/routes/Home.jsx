@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import CardSM from '../components/CardSm';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import Gallery from 'react-grid-gallery';
+
+import ImageScroller from 'react-image-scroller';
 
 export class Home extends Component {
   render() {
@@ -30,29 +33,34 @@ export class Home extends Component {
                         <h2>
                           <a
                             style={{ textDecoration: 'none' }}
-                            href="mailto:dipanshuraz2@gmail.com?body=Your message within Main Body"
+                            href="mailto:grafornax@gmail.com?body=Your message within Main Body"
                             className="text-dark"
                           >
                             <i class="far fa-envelope"></i>{' '}
-                            dipanshuraz2@gmail.com
+                            grafornax@gmail.com
                           </a>
                         </h2>
                         <h3>
                           <a
                             style={{ textDecoration: 'none' }}
-                            href="tel:+918299379285"
+                            href="tel:+8004664602"
                             className="text-dark"
                           >
-                            <i class="fas fa-mobile-alt"></i> +91 8299379285
+                            <i class="fas fa-mobile-alt"></i> +91 8004664602
                           </a>
                         </h3>
                       </div>
                     </div>
 
                     <div className="row justify-content-around ">
-                      <a href="https://www.facebook.com/GraFornax/">
+                      <a href="https://www.facebook.com/GraFornax">
                         <i class="fa-2x fab fa-facebook-f "></i>
                       </a>
+
+                      <a href="https://www.instagram.com/grafornax">
+                      <i class="fa-2x fab fa-instagram"></i>
+                      </a>
+                      
 
                       <a href="https://www.linkedin.com/in/rajat-kumar-a9858918a/">
                         <i class=" fa-2x fab fa-linkedin-in"></i>
@@ -62,7 +70,7 @@ export class Home extends Component {
                         <i class="fa-2x fab fa-behance"></i>
                       </a>
 
-                      <a href="https://twitter.com/GraFornax">
+                      <a href="https://twitter.com/grafornax">
                         <i class="fa-2x fab fa-twitter-square"></i>
                       </a>
                     </div>
@@ -82,52 +90,70 @@ export class Home extends Component {
                     <h2>
                       <i class="fas fa-tools"></i> Tools
                     </h2>
-                    <div className="d-flex">
+                    <div className="row">
+                     
+                     
                       <img
-                        src="/assets/4.png"
+                        src="/assets/corel.png"
                         width="100px"
-                        className="img-fluid p-2"
+                        height="100px"
+                        className="m-2"
                         alt=""
                       />
                       <img
-                        src="/assets/1.png"
+                        src="/assets/photoshop.png"
                         width="100px"
-                        className="img-fluid p-2"
+                        height="100px"
+                        className="m-2"
                         alt=""
                       />
                       <img
-                        src="/assets/5.png"
+                        src="/assets/illustratoor.png"
                         width="100px"
-                        className="img-fluid p-2"
+                        height="100px"
+                        className="m-2"
                         alt=""
                       />
                       <img
-                        src="/assets/2.png"
+                        src="/assets/premiere.png"
                         width="100px"
-                        className="img-fluid p-2"
+                        height="100px"
+                        className="m-2"
                         alt=""
                       />
                       <img
-                        src="/assets/3.png"
+                        src="/assets/animate.png"
                         width="100px"
-                        className="img-fluid p-2"
+                        height="100px"
+                        className="m-2"
                         alt=""
                       />
-
                       <img
-                        src="/assets/6.png"
+                        src="/assets/indesign.png"
                         width="100px"
-                        className="img-fluid p-2"
+                        height="100px"
+                        className="m-2"
                         alt=""
                       />
+                      <img
+                        src="/assets/figma.png"
+                        width="100px"
+                        height="100px"
+                        className="m-2"
+                        alt=""
+                      />
+                      <img
+                        src="/assets/affter effect.png"
+                        width="100px"
+                        height="100px"
+                        className="m-2"
+                        alt=""
+                      />
+                     
+                      
                     </div>
                     <h2>
-                      <img
-                        src="/assets/services.svg"
-                        width="40px"
-                        className="img-fluid"
-                        alt=""
-                      />
+                     
                       Services
                     </h2>
                     <div className="">
@@ -153,9 +179,10 @@ export class Home extends Component {
                       Iure, facere? Lorem ipsum dolor sit amet consectetur
                       adipisicing elit. Placeat, dolore?
                     </h4>
-                    <button className="btn btn-outline-primary font-weight-bold">
-                      Contact Now
-                    </button>
+                     <a className="btn btn-outline-primary font-weight-bold" style={{ textDecoration: 'none'}} href="#section4">
+            Contact Now
+              </a>
+                   
                   </div>
                 </div>
               </div>
@@ -163,7 +190,20 @@ export class Home extends Component {
           </div>
         </ScrollableAnchor>
         <ScrollableAnchor id={'section3'}>
-          <div className="container-fluid bg-home-3 h-100"></div>
+          <div className="container-fluid bg-home-3 h-100">
+          <div className="row justify-content-center">
+            <div className="col-12 col-md-10 ">
+            
+           <div className="p-2 bg-white border">
+           <ImageScroller>
+              <img className='border px-2' src="https://wonderfulengineering.com/wp-content/uploads/2014/10/wallpaper-photos-31.jpg" alt="First" />
+              <img className='border px-2' src="https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg" alt="First" />
+              <img className='border px-2' src="https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg" alt="First" />
+          </ImageScroller>
+           </div>
+            </div>
+          </div>
+          </div>
         </ScrollableAnchor>
         <ScrollableAnchor id={'section4'}>
           <div className="container-fluid bg-home-4 h-100 d-flex justify-content-center flex-column text-center">
