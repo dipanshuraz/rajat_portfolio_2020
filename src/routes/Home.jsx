@@ -191,7 +191,7 @@ export class Home extends Component {
         </ScrollableAnchor>
         <ScrollableAnchor id={'section3'}>
           <div className="container-fluid bg-home-3 h-100">
-          <div className="row justify-content-center">
+          <div className="row justify-content-center align-items-center  h-100 h-full">
             <div className="col-12 col-md-10 ">
             
            <div className="p-2 bg-white border">
@@ -199,6 +199,7 @@ export class Home extends Component {
               <img className='border px-2' src="https://wonderfulengineering.com/wp-content/uploads/2014/10/wallpaper-photos-31.jpg" alt="First" />
               <img className='border px-2' src="https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg" alt="First" />
               <img className='border px-2' src="https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg" alt="First" />
+              
           </ImageScroller>
            </div>
             </div>
@@ -207,7 +208,7 @@ export class Home extends Component {
         </ScrollableAnchor>
         <ScrollableAnchor id={'section4'}>
           <div className="container-fluid bg-home-4 h-100 d-flex justify-content-center flex-column text-center">
-            <h1>My Clients </h1>
+            {/* <h1>My Clients </h1>
             <div className="container">
               <div className="row my-5 justify-content-around">
                 <div className="col-md-3">
@@ -220,11 +221,11 @@ export class Home extends Component {
                   <CardSM />{' '}
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="row text-center">
               <div className="container my-3">
-                <h1>Get in Touch </h1>
+                <h1 className='py-4' >Get in Touch </h1>
                 <form class="form d-flex justify-content-center">
                   <div class="form-group mb-2 w-50">
                     <input
@@ -247,22 +248,39 @@ export class Home extends Component {
               <div className="row">
                 <div className="col-md-6">
                   <div className="row justify-content-around align-items-center">
-                    <i class="fa-2x fab fa-facebook-f">
-                      <a href="https://www.facebook.com/GraFornax/"></a>
-                    </i>
-                    <i class=" fa-2x fab fa-linkedin-in"></i>
-                    <i class="fa-2x fab fa-behance"></i>
+                  
+                      <a href="https://www.facebook.com/GraFornax">
+                        <i class="fa-2x fab fa-facebook-f "></i>
+                      </a>
+
+                      <a href="https://www.instagram.com/grafornax">
+                      <i class="fa-2x fab fa-instagram"></i>
+                      </a>
+                      
+
+                      <a href="https://www.linkedin.com/in/rajat-kumar-a9858918a/">
+                        <i class=" fa-2x fab fa-linkedin-in"></i>
+                      </a>
+
+                      <a href="https://www.behance.net/grafornax">
+                        <i class="fa-2x fab fa-behance"></i>
+                      </a>
+
+                      <a href="https://twitter.com/grafornax">
+                        <i class="fa-2x fab fa-twitter-square"></i>
+                      </a>
+
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="row justify-content-center align-items-center">
                     <h4>
-                      Made With <i class=" fas fa-heart text-danger"> </i>
+                      Made With {' '} <i class=" fas fa-heart text-danger"> </i>
                       <a
                         style={{ textDecoration: 'none' }}
-                        href="https://www.codersadhu.tech"
+                        href="https://codersadhu.netlify.app/"
                       >
-                        CoderSadhu
+                        {' '}CoderSadhu
                       </a>
                     </h4>
                   </div>
