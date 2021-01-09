@@ -1,22 +1,37 @@
 import React, { Component } from 'react';
-import CardSM from '../components/CardSm';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Gallery from 'react-grid-gallery';
 
+import emailjs from 'emailjs-com';
+import apiKeys from '../apikeys.js';
+
 import ImageScroller from 'react-image-scroller';
+
+
+
+const onSubmit=(e)=>{
+  e.preventDefault()// Prevents default refresh by the browser
+  emailjs.sendForm(apiKeys.SERVICE_ID, apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID)
+  .then(result => {
+  alert('Message Sent, I\'ll get back to you shortly', result.text);
+  },
+  error => {
+  alert( 'An error occured, Plese try again',error.text)
+  })
+  }
 
 export class Home extends Component {
   render() {
     return (
       <>
+        <div className="container-fluid ">
         <ScrollableAnchor id={'section1'}>
-          <div className="container-fluid bg-home-1">
-            <div className="row justify-content-center align-items-center h-100">
-              <div className="container ">
-                <div className="row justify-content-center align-items-center">
-                  <div className="col-md-6">
+          
+            <div className="row justify-content-center align-items-center h-100 bg-dark bg-home-1">
+            
+                  <div className="col-12 col-md-12 col-lg-8 bg-success">
                     <div className="row justify-content-center align-items-center text-center">
-                      <div className="display-1 font-weight-bold d-flex justify-content-center align-items-center">
+                      <div className="title-text font-weight-bold d-flex justify-content-center align-items-center">
                         <div
                           className="name-box text-white text-title-name "
                           unselectable="on"
@@ -28,8 +43,8 @@ export class Home extends Component {
                         </div>
                       </div>
                     </div>
-                    <div className="row my-3">
-                      <div className="text-dark">
+                    <div className="row py-3 px-2">
+                      <div className="text-dark sub-text">
                         <h2>
                           <a
                             style={{ textDecoration: 'none' }}
@@ -75,78 +90,64 @@ export class Home extends Component {
                       </a>
                     </div>
                   </div>
-                  <div className="col-md-6"></div>
-                </div>
-              </div>
+                  <div className="d-none col-12 col-md-6  bg-primary"></div>
+                
             </div>
-          </div>
+
         </ScrollableAnchor>
         <ScrollableAnchor id={'section2'}>
-          <div className="container-fluid bg-home-2 h-100 d-flex justify-content-center align-items-center">
-            <div className="row">
-              <div className="container">
-                <div className="row ">
-                  <div className="col-md-8">
-                    <h2>
+          
+           
+            <div className="row px-md-4 justify-content-center align-items-center bg-home-2 h-100 bg-success">
+              
+                  <div className="col-12 col-md-8 bg-primary">
+                  <h5 className='py-4'>
+                    Turning bright ideas into beautiful, useful, and delightful digital products everyone can use.
+                    </h5>
+                    <h2 className='py-3'>
                       <i class="fas fa-tools"></i> Tools
                     </h2>
                     <div className="row">
                      
-                     
                       <img
                         src="/assets/corel.png"
-                        width="100px"
-                        height="100px"
-                        className="m-2"
+                        className="m-2 images-icon"
                         alt=""
                       />
                       <img
                         src="/assets/photoshop.png"
-                        width="100px"
-                        height="100px"
-                        className="m-2"
+                        className="m-2 images-icon"
                         alt=""
                       />
                       <img
                         src="/assets/illustratoor.png"
-                        width="100px"
-                        height="100px"
-                        className="m-2"
+                       
+                        className="m-2 images-icon"
                         alt=""
                       />
                       <img
                         src="/assets/premiere.png"
-                        width="100px"
-                        height="100px"
-                        className="m-2"
+                       className="m-2 images-icon"
                         alt=""
                       />
                       <img
                         src="/assets/animate.png"
-                        width="100px"
-                        height="100px"
-                        className="m-2"
+                         className="m-2 images-icon"
                         alt=""
                       />
                       <img
                         src="/assets/indesign.png"
-                        width="100px"
-                        height="100px"
-                        className="m-2"
+                         className="m-2 images-icon"
                         alt=""
                       />
                       <img
                         src="/assets/figma.png"
-                        width="100px"
-                        height="100px"
-                        className="m-2"
+                        className="m-2 images-icon"
                         alt=""
                       />
                       <img
                         src="/assets/affter effect.png"
-                        width="100px"
-                        height="100px"
-                        className="m-2"
+                       className="m-2 images-icon"
                         alt=""
                       />
                      
@@ -158,42 +159,58 @@ export class Home extends Component {
                     </h2>
                     <div className="">
                       <ul>
-                        <li>HEllo</li>
-                        <li>HEllo</li>
-                        <li>HEllo</li>
-                        <li>HEllo</li>
-                        <li>HEllo</li>
-                        <li>HEllo</li>
-                        <li>HEllo</li>
+                        <li>Brand Design</li>
+                        <li>Printing</li>
+                        <li>Social media and digital marketing</li>
+                        <li>2D Animation</li>
+                        <li>Accessories Print</li>
+                        
                       </ul>
                     </div>
                   </div>
-                  <div className="col-md-4 text-center">
+                  <div className="col-12 bg-secondary col-md-4 text-center py-4">
                     <img
                       src="/assets/bg-1.svg"
                       className="img-fluid  shadow-sm p-2"
                       alt=""
                     />
                     <h4 className="my-3">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Iure, facere? Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Placeat, dolore?
+                    
+
+                    Have a nice project coming up?
+                    Let’s talk about it!
                     </h4>
-                     <a className="btn btn-outline-primary font-weight-bold" style={{ textDecoration: 'none'}} href="#section4">
+                     <a className="btn btn-outline-primary font-weight-bold pb-4" style={{ textDecoration: 'none'}} href="#section4">
             Contact Now
               </a>
                    
-                  </div>
-                </div>
+              </div>
+              <div className="col-12 py-4">
+
               </div>
             </div>
-          </div>
+  
         </ScrollableAnchor>
         <ScrollableAnchor id={'section3'}>
-          <div className="container-fluid bg-home-3 h-100">
-          <div className="row justify-content-center align-items-center  h-100 h-full">
+          
+          <div className="row bg-danger bg-home-3 justify-content-center align-items-center  h-100 h-full">
             <div className="col-12 col-md-10 ">
             
+            
+
+                {/* <Gallery  photos={[
+  {
+    src: 'http://example.com/example/img1.jpg',
+    width: 4,
+    height: 3
+  },
+  {
+    src: 'http://example.com/example/img2.jpg',
+    width: 1,
+    height: 1
+  }
+]} />; */}
+                
            <div className="p-2 bg-white border">
            <ImageScroller>
               <img className='border px-2' src="https://wonderfulengineering.com/wp-content/uploads/2014/10/wallpaper-photos-31.jpg" alt="First" />
@@ -203,27 +220,25 @@ export class Home extends Component {
           </ImageScroller>
            </div>
             </div>
-          </div>
+          
           </div>
         </ScrollableAnchor>
         <ScrollableAnchor id={'section4'}>
-          <div className="container-fluid bg-home-4 h-100 d-flex justify-content-center flex-column text-center">
-            {/* <h1>My Clients </h1>
-            <div className="container">
-              <div className="row my-5 justify-content-around">
-                <div className="col-md-3">
-                  <CardSM />
-                </div>
-                <div className="col-md-3">
-                  <CardSM />
-                </div>
-                <div className="col-md-3">
-                  <CardSM />{' '}
-                </div>
-              </div>
-            </div> */}
+          <div className="">
+           
 
-            <div className="row text-center">
+            <div className="row">
+            <form className='form' onSubmit = {onSubmit}>
+<p>Your Name:</p>
+<input name='name' type='text' placeholder='name…' className='form__input' />
+<p>Subject:</p>
+<input name='subject' type='text' placeholder='Subject…' className='form__input' />
+<p>Your Message:</p>
+<textarea name='message' type='text' placeholder='Your Message…' className='form__input-message' ></textarea>
+<button className='form__input — button'>Send Message</button>
+</form>
+            </div>
+            <div className="row bg-home-4 text-center">
               <div className="container my-3">
                 <h1 className='py-4' >Get in Touch </h1>
                 <form class="form d-flex justify-content-center">
@@ -244,8 +259,8 @@ export class Home extends Component {
                 </form>
               </div>
             </div>
-            <div className="container justify-content-center align-items-center  my-5 text-center">
-              <div className="row">
+            
+              <div className="row justify-content-center align-items-center  my-5 text-center">
                 <div className="col-md-6">
                   <div className="row justify-content-around align-items-center">
                   
@@ -286,9 +301,11 @@ export class Home extends Component {
                   </div>
                 </div>
               </div>
-            </div>
+            
           </div>
         </ScrollableAnchor>
+      
+        </div>
       </>
     );
   }

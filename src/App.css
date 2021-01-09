@@ -57,3 +57,51 @@ ul {
 .img-logo {
   transform: scale(1.5);
 }
+
+
+
+/* Media  */
+
+@media (max-width: 575px) { 
+  .title-text {
+    font-size: 3rem !important;
+  }
+  .sub-text {
+    font-size: 0.6rem !important;
+    background-color: aquamarine;
+  }
+  .images-icon {
+    height: 24px !important;
+    width: 24px !important;
+  }
+ }
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+ 
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .title-text {
+    font-size: 5rem !important;
+  }
+  .sub-text {
+    font-size: 2rem !important;
+    background-color: #7b25eb;
+  }
+  .images-icon {
+    height: 24px !important;
+    width: 24px !important;
+  }
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
