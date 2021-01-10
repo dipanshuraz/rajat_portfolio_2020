@@ -168,7 +168,7 @@ export class Home extends Component {
                       </ul>
                     </div>
                   </div>
-                  <div className="col-12 bg-secondary col-md-4 text-center py-4">
+                  <div className="col-12 h-100 bg-secondary col-md-4 text-center py-4">
                     <img
                       src="/assets/bg-1.svg"
                       className="img-fluid  shadow-sm p-2"
@@ -193,23 +193,9 @@ export class Home extends Component {
         </ScrollableAnchor>
         <ScrollableAnchor id={'section3'}>
           
-          <div className="row bg-danger bg-home-3 justify-content-center align-items-center  h-100 h-full">
-            <div className="col-12 col-md-10 ">
+          <div style={{ position : "relative"}} className="row bg-danger bg-home-3 justify-content-center align-items-center  h-100 h-full">
+            <div className="col-12 col-md-10 bg-success py-4">
             
-            
-
-                {/* <Gallery  photos={[
-  {
-    src: 'http://example.com/example/img1.jpg',
-    width: 4,
-    height: 3
-  },
-  {
-    src: 'http://example.com/example/img2.jpg',
-    width: 1,
-    height: 1
-  }
-]} />; */}
                 
            <div className="p-2 bg-white border">
            <ImageScroller>
@@ -227,7 +213,9 @@ export class Home extends Component {
           <div className="">
            
 
-            <div className="row">
+           
+            <div className="row bg-home-4 text-center">
+               {/* <div className="row">
             <form className='form' onSubmit = {onSubmit}>
 <p>Your Name:</p>
 <input name='name' type='text' placeholder='name…' className='form__input' />
@@ -237,8 +225,7 @@ export class Home extends Component {
 <textarea name='message' type='text' placeholder='Your Message…' className='form__input-message' ></textarea>
 <button className='form__input — button'>Send Message</button>
 </form>
-            </div>
-            <div className="row bg-home-4 text-center">
+            </div> */}
               <div className="container my-3">
                 <h1 className='py-4' >Get in Touch </h1>
                 <form class="form d-flex justify-content-center">
@@ -260,8 +247,8 @@ export class Home extends Component {
               </div>
             </div>
             
-              <div className="row justify-content-center align-items-center  my-5 text-center">
-                <div className="col-md-6">
+              <div className="row justify-content-center align-items-center  my-4 text-center">
+                <div className="col-12 py-4 col-md-6">
                   <div className="row justify-content-around align-items-center">
                   
                       <a href="https://www.facebook.com/GraFornax">
@@ -287,7 +274,7 @@ export class Home extends Component {
 
                   </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-12 col-md-6">
                   <div className="row justify-content-center align-items-center">
                     <h4>
                       Made With {' '} <i class=" fas fa-heart text-danger"> </i>
