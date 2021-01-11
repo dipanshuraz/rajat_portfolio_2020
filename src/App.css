@@ -11,6 +11,7 @@ ul {
 
 .bg-purple {
   background-color: #7b25eb60;
+  width: 100px;
 }
 
 .h-100 {
@@ -35,7 +36,7 @@ ul {
 }
 
 .fixed-nav {
-  background-color: #efe2ff3d;
+  background-color: #b79de4 !important;
 }
 .name-box {
   padding: 0.5rem 1rem;
@@ -55,7 +56,8 @@ ul {
 }
 
 .img-logo {
-  transform: scale(1.5);
+  transform: scale(1.2);
+  
 }
 
 
@@ -71,8 +73,8 @@ ul {
     background-color: aquamarine;
   }
   .images-icon {
-    height: 24px !important;
-    width: 24px !important;
+    height: 36px !important;
+    width: 36px !important;
   }
  }
 
@@ -88,11 +90,11 @@ ul {
   }
   .sub-text {
     font-size: 2rem !important;
-    background-color: #7b25eb;
+
   }
   .images-icon {
-    height: 24px !important;
-    width: 24px !important;
+    height: 64px !important;
+    width: 64px !important;
   }
  }
 
@@ -104,4 +106,8 @@ ul {
  /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
+ }
+
+ .navbar-nav a {
+   color: white !important;
  }

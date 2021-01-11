@@ -13,7 +13,7 @@ const onSubmit=(e)=>{
   e.preventDefault()// Prevents default refresh by the browser
   emailjs.sendForm(apiKeys.SERVICE_ID, apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID)
   .then(result => {
-  alert('Message Sent, I\'ll get back to you shortly', result.text);
+    alert('Message Sent, I\'ll get back to you shortly', result.text);
   },
   error => {
   alert( 'An error occured, Plese try again',error.text)
@@ -27,9 +27,9 @@ export class Home extends Component {
         <div className="container-fluid ">
         <ScrollableAnchor id={'section1'}>
           
-            <div className="row justify-content-center align-items-center h-100 bg-dark bg-home-1">
+            <div className="row justify-content-center align-items-center h-100 bg-home-1">
             
-                  <div className="col-12 col-md-12 col-lg-8 bg-success">
+                  <div className="col-12 col-md-12 col-lg-8">
                     <div className="row justify-content-center align-items-center text-center">
                       <div className="title-text font-weight-bold d-flex justify-content-center align-items-center">
                         <div
@@ -67,7 +67,7 @@ export class Home extends Component {
                       </div>
                     </div>
 
-                    <div className="row justify-content-around ">
+                    <div className="row w-75 justify-content-around ">
                       <a href="https://www.facebook.com/GraFornax">
                         <i class="fa-2x fab fa-facebook-f "></i>
                       </a>
@@ -90,7 +90,7 @@ export class Home extends Component {
                       </a>
                     </div>
                   </div>
-                  <div className="d-none col-12 col-md-6  bg-primary"></div>
+                  <div className="d-none col-12 col-md-6"></div>
                 
             </div>
 
@@ -98,16 +98,16 @@ export class Home extends Component {
         <ScrollableAnchor id={'section2'}>
           
            
-            <div className="row px-md-4 justify-content-center align-items-center bg-home-2 h-100 bg-success">
+            <div className="row px-md-4 justify-content-center align-items-center bg-home-2 h-100 ">
               
-                  <div className="col-12 col-md-8 bg-primary">
+                  <div className="col-12 col-md-8 text-center">
                   <h5 className='py-4'>
                     Turning bright ideas into beautiful, useful, and delightful digital products everyone can use.
                     </h5>
                     <h2 className='py-3'>
                       <i class="fas fa-tools"></i> Tools
                     </h2>
-                    <div className="row">
+                    <div className="row justify-content-center">
                      
                       <img
                         src="/assets/corel.png"
@@ -168,36 +168,32 @@ export class Home extends Component {
                       </ul>
                     </div>
                   </div>
-                  <div className="col-12 h-100 bg-secondary col-md-4 text-center py-4">
+                  <div className="col-12 col-md-4  text-center">
                     <img
                       src="/assets/bg-1.svg"
                       className="img-fluid  shadow-sm p-2"
                       alt=""
                     />
                     <h4 className="my-3">
-                    
-
                     Have a nice project coming up?
                     Let’s talk about it!
                     </h4>
-                     <a className="btn btn-outline-primary font-weight-bold pb-4" style={{ textDecoration: 'none'}} href="#section4">
+                     <a className="btn btn-outline-primary font-weight-bold mb-4" style={{ textDecoration: 'none'}} href="#section4">
             Contact Now
               </a>
                    
               </div>
-              <div className="col-12 py-4">
-
-              </div>
+             
             </div>
   
         </ScrollableAnchor>
         <ScrollableAnchor id={'section3'}>
           
-          <div style={{ position : "relative"}} className="row bg-danger bg-home-3 justify-content-center align-items-center  h-100 h-full">
-            <div className="col-12 col-md-10 bg-success py-4">
+          <div className="row bg-home-3 justify-content-center align-items-center  h-100 h-full">
+            <div className="col-12 col-md-10">
             
                 
-           <div className="p-2 bg-white border">
+           <div className="p-2 border">
            <ImageScroller>
               <img className='border px-2' src="https://wonderfulengineering.com/wp-content/uploads/2014/10/wallpaper-photos-31.jpg" alt="First" />
               <img className='border px-2' src="https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg" alt="First" />
@@ -215,33 +211,35 @@ export class Home extends Component {
 
            
             <div className="row bg-home-4 text-center">
-               {/* <div className="row">
-            <form className='form' onSubmit = {onSubmit}>
-<p>Your Name:</p>
-<input name='name' type='text' placeholder='name…' className='form__input' />
-<p>Subject:</p>
-<input name='subject' type='text' placeholder='Subject…' className='form__input' />
-<p>Your Message:</p>
+               <div className="row">
+
+            </div>
+              <div className="container my-3">
+                  <h1 className='py-4' >Get in Touch </h1>
+                  
+                  {/* <form className='form d-flex justify-content-center' onSubmit={onSubmit}>
+                  <div class="form-group mb-2 w-50">
+                     
+                  </div>
 <textarea name='message' type='text' placeholder='Your Message…' className='form__input-message' ></textarea>
 <button className='form__input — button'>Send Message</button>
-</form>
-            </div> */}
-              <div className="container my-3">
-                <h1 className='py-4' >Get in Touch </h1>
-                <form class="form d-flex justify-content-center">
+                  </form> */}
+                  
+                <form class="form d-flex justify-content-center" onSubmit={onSubmit}>
                   <div class="form-group mb-2 w-50">
-                    <input
+                  <input
+                        name='message'
                       type="text"
-                      class="form-control "
-                      id="email"
-                      placeholder="Email "
+                      class="form-control form__input-message"
+                      id=""
+                      placeholder="Your Message…"
                     />
                   </div>
                   <button
                     type="submit"
-                    class="btn btn-outline-primary font-weight-bold mb-2"
+                    class="btn btn-outline-primary font-weight-bold mb-2 form__input — button"
                   >
-                    Submit
+                  Send Message
                   </button>
                 </form>
               </div>

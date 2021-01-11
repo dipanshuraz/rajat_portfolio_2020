@@ -6,12 +6,12 @@ function NavPublic() {
   return (
     <StickyHeader
       header={
-        <nav class="navbar bg-white navbar-expand-lg navbar-light bg-home-2 bg-purple py-2 w-100 fixed-nav shadow-sm">
-          <a class="navbar-brand" href="#">
+        <nav class="navbar bg-white navbar-expand-lg bg-purple py-2 w-100 fixed-nav shadow-sm">
+          <a  class="navbar-brand" href="#">
             <img
               src="/assets/logo.png"
-              height="32px"
-              width="32px"
+              height="36px"
+              width="36px"
               className="img-fluid img-logo"
               alt=""
             />
@@ -30,16 +30,16 @@ function NavPublic() {
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav w-100 d-flex justify-content-around">
               <a style={{ textDecoration: 'none' }} href="#section1">
-                <h4>Home</h4>
+                <h5>Home</h5>
               </a>
               <a style={{ textDecoration: 'none' }} href="#section2">
-                <h4>About Me</h4>
+                <h5>About Me</h5>
               </a>
               <a style={{ textDecoration: 'none' }} href="#section3">
-                <h4>My Work</h4>
+                <h5>My Work</h5>
               </a>
               <a style={{ textDecoration: 'none' }} href="#section4">
-                <h4>Contact Us</h4>
+                <h5>Contact Us</h5>
               </a>
             </div>
           </div>
