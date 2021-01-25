@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import Gallery from 'react-grid-gallery';
 
 import emailjs from 'emailjs-com';
 import apiKeys from '../apikeys.js';
